@@ -26,6 +26,8 @@ namespace Inheritance
             /*Create an object of your Bird class
              *  give values to your members using the object of your Bird class
              *  
+             *  
+             *  
              * Creatively display the class member values 
              */
 
@@ -34,6 +36,19 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+            Bird toucan = new Bird();
+            toucan.Age = 10;
+            toucan.Weight = 20;
+            toucan.WingSpan = 35;
+            toucan.CanFly = true;
+            toucan.NumOfLegs = 2;
+
+            Reptile lizard = new Reptile();
+            lizard.ColdBlooded = false;
+            lizard.NumOfLegs = 4;
+
+            Console.WriteLine($"check out my pet collection, my lizard has {lizard.NumOfLegs} legs and my pet toucan has a wing span of  {toucan.WingSpan} cm!");
         }
     }
 }
